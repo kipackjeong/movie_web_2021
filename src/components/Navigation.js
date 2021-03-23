@@ -1,12 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import "./Navigation.css";
 
-export default function Navigation(){
-  
+function Navigation() {
   return (
-    <div>
+    <div className="nav">
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
     </div>
-  )
-
-
+  );
 }
+
+export default Navigation;
